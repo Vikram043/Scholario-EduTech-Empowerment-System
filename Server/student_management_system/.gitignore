@@ -1,0 +1,19 @@
+# .gitignore
+
+# Environment
+.env
+
+# Databases
+*.db
+
+# Static files
+/static
+
+# Media uploads
+/media
+
+# Logs
+*.log
+
+# Virtual environment
+venv/
