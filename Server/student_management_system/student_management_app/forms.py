@@ -18,3 +18,14 @@ class StudentExtraForm(forms.ModelForm):
     class Meta:
         model=models.StudentExtra
         fields=['roll','cl','mobile','fee','status']
+
+
+#for teacher related form
+class TeacherUserForm(forms.ModelForm):
+    class Meta:
+        model=User
+        fields=['first_name','last_name','username','password']
+class TeacherExtraForm(forms.ModelForm):
+    class Meta:
+        model=models.TeacherExtra
+        fields=['salary','mobile','status']
