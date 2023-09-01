@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="{% static 'css/about.css' %}"> <!-- Link to your CSS file -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+  <style type="text/css">
+      .about-container {
+          padding: 40px;
+          text-align: center;
+      }
+
+      .jumbotron {
+          background-color: #f8f9fa;
+          border-radius: 10px;
+          padding: 20px;
+      }
+
+      .jumbotron h1 {
+          font-size: 36px;
+      }
+
+      .jumbotron p {
+          font-size: 18px;
+      }
+
+      .btn-primary {
+          background-color: #007bff;
+          border: none;
+      }
+
+      .btn-primary:hover {
+          background-color: #0056b3;
+      }
+      ul {
+          list-style-position:inside; /* Moves the marker inside the <ul> */
+          padding-left: 35%; /* Removes default left padding */
+      }
+
+      ul li {
+          display: flex; /* Use flexbox to align marker and content */
+          align-items: center; /* Vertically center the content */
+          margin-bottom: 10px; /* Adjust the margin as needed */
+      }
+
+      ul li::before {
+          content: "\2022"; /* Use a bullet character as the marker (adjust as needed) */
+          margin-right: 10px; /* Adjust the spacing between marker and content */
+      }
+
+  </style>
+</head>
+
+<body>
+    {% include "student_management_app/navbar.html" %}
+    <div class="about-container">
+      <div class="jumbotron">
+          <h1 class="display-4">Welcome to Our School</h1>
+          <p class="lead">We are dedicated to providing quality education and support to our students and teachers.</p>
+          <p class="lead">At School Management, we believe in:</p>
+          <ul>
+              <li>Empowering students to achieve their full potential</li>
+              <li>Fostering a culture of creativity and innovation</li>
+              <li>Providing a safe and inclusive learning environment</li>
+          </ul>
+          <p class="lead">Our passionate teachers and staff are committed to shaping the future of our students.</p>
+          <hr class="my-4">
+          <p>Explore our website to learn more about what makes us special.</p>
+          <p class="lead">
+              <a class="btn btn-primary btn-lg" href="/" role="button">Home</a>
+          </p>
+      </div>
+  </div>
+    {% include "student_management_app/footer.html" %}
+</body>
+
+</html>
