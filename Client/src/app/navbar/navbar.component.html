@@ -1,0 +1,12 @@
+<!-- src/app/navbar/navbar.component.html -->
+<nav *ngIf="isNavbarVisible()" [ngClass]="{'fixed-navbar': isFixedNavbar}">
+  <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+    <a routerLink="/" class="text-2xl font-bold text-blue-500 hover:text-blue-700">Learning Platform</a>
+    <ul class="flex space-x-4">
+      <li><a routerLink="/home">Home</a></li>
+      <li><a routerLink="/student">Student</a></li>
+      <li><a routerLink="/instructor">Instructor</a></li>
+      <li><a routerLink="/admin">Admin</a></li>
+    </ul>
+  </div>
+</nav>

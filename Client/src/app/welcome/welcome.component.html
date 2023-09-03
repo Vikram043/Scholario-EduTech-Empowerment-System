@@ -1,0 +1,26 @@
+<div class="container mx-auto mt-16 text-center">
+    <div class="centered-container">
+      <div class="custom-box">
+        <h2 class="text-4xl font-bold text-green-700">
+          Hello, {{ userType }}
+          <span class="icon text-red-700 {{ userTypeIcon }}"></span>
+        </h2>
+        <p class="text-lg text-black-600 mt-4">
+          Welcome to School Management System.
+        </p>
+        <p class="text-lg text-black-600 mt-4">
+          You can access various features <br> after Login and Sign Up.
+        </p>
+  
+        <div class="mt-8 space-x-4">
+            <a routerLink="/{{userType}}/login" class="login-button">
+            <i class="fas fa-sign-in-alt"></i> Login
+            </a>
+          <a routerLink="/{{userType}}/register" class="signup-button">
+            <i class="fas fa-user-plus"></i> Sign Up
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  

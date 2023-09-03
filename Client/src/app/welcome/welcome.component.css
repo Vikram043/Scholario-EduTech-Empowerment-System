@@ -1,0 +1,50 @@
+.centered-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh; /* Vertically center the content in the viewport */
+  }
+  
+  .custom-box {
+    width: 400px;
+    height: 400px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: border-radius 0.3s ease-in-out;
+  }
+  
+  /* Rest of the CSS remains the same */
+  
+  
+  .custom-box:hover {
+    border-radius: 50%; /* Change the border-radius on hover for an animation effect */
+  }
+  
+  .login-button,
+  .signup-button {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  }
+  
+  .login-button {
+    background-color: #3498db;
+    color: white;
+  }
+  
+  .signup-button {
+    background-color: #95a5a6;
+    color: white;
+  }
+  
+  .login-button:hover,
+  .signup-button:hover {
+    transform: scale(1.05); /* Scale the button on hover */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow on hover */
+  }
+  
