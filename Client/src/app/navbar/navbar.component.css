@@ -1,0 +1,25 @@
+/* Default Navbar Styles */
+nav {
+    background-color: #1a82d7; /* Semi-transparent white background */
+    transition: background-color 0.1s ease; /* Add a smooth transition effect */
+  }
+  
+  nav a {
+    color: #333; /* Adjust link color as needed */
+    text-decoration: none;
+  }
+  
+  nav a:hover {
+    color: #555; /* Adjust link color on hover as needed */
+  }
+  
+  /* Fixed Navbar Styles */
+  nav.fixed-navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #1a82d7; /* Change to your desired background color */
+    z-index: 1000; /* Ensure it's above other content */
+  }
+  

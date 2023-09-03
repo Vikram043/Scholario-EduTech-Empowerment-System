@@ -1,0 +1,13 @@
+/* home.component.css */
+.bg-image {
+    background-image: url('../../assets/bgi.jpg'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh; /* Make sure the image covers the whole viewport */
+  }
+  
+  .content-container {
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background for content */
+    padding: 10px;
+  }
+  

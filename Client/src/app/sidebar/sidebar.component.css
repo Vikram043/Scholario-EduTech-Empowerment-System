@@ -1,0 +1,7 @@
+/* sidebar.component.css */
+.sidebar {/* Initial width */
+  width: 200px;
+  background-color: black;
+    transition: width 0.3s; /* Add a smooth transition effect */
+  }
+  
