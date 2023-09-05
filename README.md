@@ -25,6 +25,7 @@
   * [Usage](#usage)
 * [Features](#features)
 * [Endpoints](#endpoints)
+* [ER Diagram](#entities-and-relationships)  
 * [Screenshots](#screenshots)
 * [Contributing](#contributing)
 * [License](#license)
@@ -37,7 +38,7 @@ Scholario is an EduTech Empowerment System designed to revolutionize education m
 
 ### Built With
 
-* Frontend: [React](https://reactjs.org/)
+* Frontend: [Angular](https://angular.io/) Frontend: [React](https://reactjs.org/)
 * Backend: [Python](https://www.python.org/) with [Django](https://www.djangoproject.com/)
 * Database: [SQL](https://www.sql.org/), [MongoDB](https://www.mongodb.com/)
 * AI Integration: [ChatGPT](https://openai.com/), [GenAI](https://genai.com/)
@@ -66,7 +67,8 @@ To get started with Scholario, follow these simple steps.
 1. Run the frontend
    ```sh
    cd frontend
-   npm start
+    ng serve
+
 
 2. Run the backend
    ```sh
@@ -103,6 +105,73 @@ Here are some of the API endpoints you can utilize:
 - `/contactus`: Contact Us Page
 - And more...
 
+## Entities and Relationships:
+
+Entities:
+- Student
+- Teacher
+- Admin
+- Class
+- Subject
+- Attendance
+- Fee
+- Notice
+
+Relationships:
+- Student attends Class (Many-to-Many)
+- Teacher teaches Subject (Many-to-Many)
+- Teacher manages Class (One-to-Many)
+- Admin approves Teacher (One-to-Many)
+- Admin approves Student (One-to-Many)
+- Student pays Fee (One-to-Many)
+- Student views Notice (Many-to-Many)
+- Teacher posts Notice (One-to-Many)
+- Admin manages Notice (One-to-Many)
+- Student records Attendance (One-to-Many)
+- Teacher takes Attendance (One-to-Many)
+
+Attributes:
+Student:
+- StudentID (Primary Key)
+- Name
+- Roll Number
+- Contact
+
+Teacher:
+- TeacherID (Primary Key)
+- Name
+- Subject
+- Contact
+
+Admin:
+- AdminID (Primary Key)
+- Name
+- Contact
+
+Class:
+- ClassID (Primary Key)
+- ClassName
+
+Subject:
+- SubjectID (Primary Key)
+- SubjectName
+
+Attendance:
+- AttendanceID (Primary Key)
+- Date
+- Status (Present/Absent)
+
+Fee:
+- FeeID (Primary Key)
+- Amount
+- PaymentDate
+
+Notice:
+- NoticeID (Primary Key)
+- Content
+- PostedDate
+
+
 <!-- SCREENSHOTS -->
 ## Screenshots
 ### Admin Dashboard
@@ -138,19 +207,6 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 Vikram - knowme962@gmail.com
 
-Project Link: https://github.com/yourusername/your-repo
+Project Link: https://github.com/Vikram043/Scholario-EduTech-Empowerment-System
 
 
-
-
-
-
-
-
-
-
-
-
-
-# Test
-![image](https://github.com/Vikram043/Test/assets/119391188/8adb52fe-1389-4999-81e6-568c983aebea)
