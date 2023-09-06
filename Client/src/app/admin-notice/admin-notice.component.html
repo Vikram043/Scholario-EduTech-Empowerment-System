@@ -1,0 +1,27 @@
+<div class="flex">
+    <!-- Sidebar with Tailwind CSS classes -->
+    <!-- admin-dashboard.component.html -->
+<app-sidebar [sidebarVisible]="isSidebarVisible" class="bg-gray-800 text-white w-1/8"></app-sidebar>
+<!-- Other content for the admin dashboard -->
+
+
+    <div class="flex-grow"> <!-- Use flex-grow to make the content area fill available space -->
+      <!-- Header with Tailwind CSS classes -->
+      
+      <app-header (logoutEvent)="logout()" (toggleSidebarEvent)="toggleSidebar()" class="bg-blue-500 text-white "></app-header>
+
+      <br>
+      <!-- Other content for the dashboard -->
+      <div class="px-8"> <!-- Use grid classes for layout -->
+      <br>
+      <div class="bg-white rounded-lg p-4 mb-4">
+        <h2 class="text-2xl font-semibold mb-4">Notice Board</h2>
+        <!-- Add your notice board content here -->
+        <div class="bg-gray-700 p-4 rounded-lg">
+          <textarea class="text-white bg-transparent w-full h-24" placeholder="Enter your notice here..."></textarea>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  

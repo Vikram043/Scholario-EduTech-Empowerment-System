@@ -12,20 +12,6 @@ import { ActivatedRoute, Router, NavigationEnd } from '@angular/router';
 export class AppComponent implements OnInit {
   title = 'client';
   showNavbar: boolean =true
-
-  constructor(private router: Router) {
-   
-    this.router.events.subscribe((event) => {
-      if (event instanceof NavigationEnd) {
-        const currentRoute = this.router.url;
-        if (currentRoute === '/admin/dashboard') {
-          this.showNavbar = false;
-        } else {
-          this.showNavbar = true;
-        }
-      }
-    });
-  }
   ngOnInit(): void {
     initFlowbite();
   }

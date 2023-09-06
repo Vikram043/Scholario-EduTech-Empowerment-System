@@ -1,0 +1,73 @@
+<div class="flex">
+    <!-- Sidebar with Tailwind CSS classes -->
+    <!-- admin-dashboard.component.html -->
+<app-student-sidebar [sidebarVisible]="isSidebarVisible" class="bg-gray-800 text-white w-1/8"></app-student-sidebar>
+<!-- Other content for the admin dashboard -->
+
+
+    <div class="flex-grow"> <!-- Use flex-grow to make the content area fill available space -->
+      <!-- Header with Tailwind CSS classes -->
+      
+      <app-header (logoutEvent)="logout()" (toggleSidebarEvent)="toggleSidebar()" class="bg-blue-500 text-white "></app-header>
+
+      <br>
+      <!-- Other content for the dashboard -->
+      <div class="p-4 grid grid-cols-4 gap-4"> <!-- Use grid classes for layout -->
+        <!-- Div-01 -->
+        <div class="bg-blue-100 rounded-lg p-4 mb-4 flex items-center">
+          <div>
+            <p class="text-xl font-semibold">Total Teacher</p>
+            <i class="fas fa-chalkboard-teacher mr-2 text-green-500"></i>
+            <span class="text-blue-500 text-lg font-semibold">15000</span>
+            <p class="text-xl font-semibold">Pending Teacher</p>
+            <span class="text-red-500 text-lg font-semibold">0</span>
+          </div>
+        </div>
+  
+        <!-- Div-02 -->
+        <div class="bg-green-100 rounded-lg p-4 mb-4 flex items-center">
+          <div>
+            <p class="text-xl font-semibold">Total Student</p>
+            <i class="fas fa-graduation-cap mr-2 text-yellow-500"></i>
+            <span class="text-blue-500 text-lg font-semibold">150000</span>
+            <p class="text-xl font-semibold">Pending Students</p>
+            <span class="text-red-500 text-lg font-semibold">0</span>
+          </div>
+        </div>
+  
+        <!-- Div-03 -->
+        <div class="bg-yellow-100 rounded-lg p-4 mb-4 flex items-center">
+          <div>
+            <p class="text-xl font-semibold">Teachers Salary</p>
+            <i class="fas fa-dollar-sign mr-2 text-red-500"></i>
+            <span class="text-blue-500 text-lg font-semibold">150000</span>
+            <p class="text-xl font-semibold">Pending Salary</p>
+            <span class="text-red-500 text-lg font-semibold">None</span>
+          </div>
+        </div>
+  
+        <!-- Div-04 -->
+        <div class="bg-pink-100 rounded-lg p-4 mb-4 flex items-center">
+          <div>
+            <p class="text-xl font-semibold">Student Fee</p>
+            <i class="fas fa-dollar-sign mr-2 text-red-500"></i>
+            <span class="text-blue-500 text-lg font-semibold">150000</span>
+            <p class="text-xl font-semibold">Pending Dues</p>
+            <span class="text-red-500 text-lg font-semibold">None</span>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Notice Board -->
+      <br>
+      <div class="bg-white rounded-lg p-4 mb-4">
+        <h2 class="text-2xl font-semibold mb-4">Notice Board</h2>
+        <!-- Add your notice board content here -->
+        <div class="bg-gray-700 p-4 rounded-lg">
+          <textarea class="text-white bg-transparent w-full h-24" placeholder="Enter your notice here..."></textarea>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
