@@ -9,9 +9,9 @@
     <br />
     <a href="https://yourprojectdemo.link/">View Demo</a>
     ·
-    <a href="https://github.com/yourusername/your-repo">Report Bug</a>
+    <a href="https://github.com/Vikram043/Scholario-EduTech-Empowerment-System">Report Bug</a>
     ·
-    <a href="https://github.com/yourusername/your-repo">Request Feature</a>
+    <a href="https://github.com/Vikram043/Scholario-EduTech-Empowerment-System">Request Feature</a>
   </p>
 </p>
 
@@ -52,7 +52,7 @@ To get started with Scholario, follow these simple steps.
 
 1. Clone the repository
    ```sh
-   git clone https://github.com/yourusername/your-repo.git
+   git clone https://github.com/Vikram043/Scholario-EduTech-Empowerment-System
 
    Install necessary packages
 
