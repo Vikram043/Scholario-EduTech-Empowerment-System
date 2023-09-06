@@ -38,7 +38,7 @@ Scholario is an EduTech Empowerment System designed to revolutionize education m
 
 ### Built With
 
-* Frontend: [Angular](https://angular.io/) Frontend: [React](https://reactjs.org/)
+* Frontend: [Angular](https://angular.io/)
 * Backend: [Python](https://www.python.org/) with [Django](https://www.djangoproject.com/)
 * Database: [SQL](https://www.sql.org/), [MongoDB](https://www.mongodb.com/)
 * AI Integration: [ChatGPT](https://openai.com/), [GenAI](https://genai.com/)
