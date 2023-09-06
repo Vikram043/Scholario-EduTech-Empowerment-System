@@ -17,6 +17,15 @@ import { AdminLoginComponent } from './admin-login/admin-login.component';
 import { AdminDashboardComponent } from './admin-dashboard/admin-dashboard.component';
 import { NavbarService } from './navbar/navbar.service';
 import { HeaderComponent } from './header/header.component';
+import { AdminTeacherComponent } from './admin-teacher/admin-teacher.component';
+import { AdminStudentComponent } from './admin-student/admin-student.component';
+import { AdminAttendanceComponent } from './admin-attendance/admin-attendance.component';
+import { AdminFeesComponent } from './admin-fees/admin-fees.component';
+import { AdminNoticeComponent } from './admin-notice/admin-notice.component';
+import { StudentDashboardComponent } from './student-dashboard/student-dashboard.component';
+import { StudentSidebarComponent } from './student-sidebar/student-sidebar.component';
+import { InstructorDashboardComponent } from './instructor-dashboard/instructor-dashboard.component';
+import { InstructorSidebarComponent } from './instructor-sidebar/instructor-sidebar.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +42,16 @@ import { HeaderComponent } from './header/header.component';
     InstructorLoginComponent,
     AdminLoginComponent,
     AdminDashboardComponent,
-    HeaderComponent
+    HeaderComponent,
+    AdminTeacherComponent,
+    AdminStudentComponent,
+    AdminAttendanceComponent,
+    AdminFeesComponent,
+    AdminNoticeComponent,
+    StudentDashboardComponent,
+    StudentSidebarComponent,
+    InstructorDashboardComponent,
+    InstructorSidebarComponent
   ],
   imports: [
     BrowserModule,

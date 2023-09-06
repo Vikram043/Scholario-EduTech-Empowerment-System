@@ -1,3 +1,4 @@
+import { StudentDashboardComponent } from './student-dashboard/student-dashboard.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomepageComponent } from './homepage/homepage.component';
@@ -9,6 +10,12 @@ import { InstructorRegistrationComponent } from './instructor-registration/instr
 import { AdminLoginComponent } from './admin-login/admin-login.component';
 import { AdminRegistrationComponent } from './admin-registration/admin-registration.component';
 import { AdminDashboardComponent } from './admin-dashboard/admin-dashboard.component';
+import { AdminTeacherComponent } from './admin-teacher/admin-teacher.component';
+import { AdminStudentComponent } from './admin-student/admin-student.component';
+import { AdminFeesComponent } from './admin-fees/admin-fees.component';
+import { AdminAttendanceComponent } from './admin-attendance/admin-attendance.component';
+import { AdminNoticeComponent } from './admin-notice/admin-notice.component';
+import { InstructorDashboardComponent } from './instructor-dashboard/instructor-dashboard.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -22,7 +29,14 @@ const routes: Routes = [
   { path: 'Instructor/login', component: InstructorLoginComponent },
   { path: 'Admin/register', component: AdminRegistrationComponent },
   { path: 'Admin/login', component: AdminLoginComponent },
-  { path: 'admin/dashboard', component: AdminDashboardComponent }
+  { path: 'admin/dashboard', component: AdminDashboardComponent },
+  { path: 'admin/teacher', component: AdminTeacherComponent },
+  { path: 'admin/student', component: AdminStudentComponent },
+  { path: 'admin/attendance', component: AdminAttendanceComponent },
+  { path: 'admin/fee', component: AdminFeesComponent },
+  { path: 'admin/notice', component: AdminNoticeComponent },
+  { path: 'student/dashboard', component: StudentDashboardComponent },
+  { path: 'instructor/dashboard', component: InstructorDashboardComponent },
   // Add more routes for other pages if needed
 ];
 @NgModule({
