@@ -4,14 +4,14 @@
   <p align="center">
     Transforming Education with Technology!
     <br />
-    <a href="#"><strong>Explore the documentation »</strong></a>
+    <a href="https://sms-blog-git-main-phoenix043.vercel.app/"><strong>Explore the documentation »</strong></a>
     <br />
     <br />
     <a href="https://yourprojectdemo.link/">View Demo</a>
     ·
-    <a href="https://github.com/Vikram043/Scholario-EduTech-Empowerment-System">Report Bug</a>
+    <a href="https://sms-blog-git-main-phoenix043.vercel.app/">Report Bug</a>
     ·
-    <a href="https://github.com/Vikram043/Scholario-EduTech-Empowerment-System">Request Feature</a>
+    <a href="https://sms-blog-git-main-phoenix043.vercel.app/">Request Feature</a>
   </p>
 </p>
 
